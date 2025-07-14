@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Szente Bence</title>
+</head>
+<body>
+    <main class="container py-4">
+        <header class="text-center mb-4">
+            <h1>Receptgyűjtemény</h1>
+        </header>
+
+        <nav class="mb-4 text-center">
+            <div class="btn-group">
+                <button class="btn btn-primary recept">Receptek</button>
+                <button class="btn btn-outline-primary kedvencek">Kedvenceim</button>
+            </div>
+        </nav>
+
+        <div class="nagyrecept d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+            <button class="btn btn-secondary bal">Hátra</button>
+            <div class="reszletek flex-grow-1 text-center"></div>
+            <button class="btn btn-secondary jobb">Előre</button>
+        </div>
+
+        <article>
+            <div class="receptek row g-3">
+               
+            </div>
+        </article>
+    </main>
+
+    <footer class="text-center py-3 bg-light mt-4">
+        Szente Bence
+    </footer>
+</body>
+</html>
