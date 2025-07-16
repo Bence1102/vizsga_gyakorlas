@@ -34,6 +34,29 @@ main {
     max-width: 1200px;
     margin: auto;
 }
+.nagyrecept {
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .nagyrecept {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nagyrecept .btn {
+        width: 100%;
+    }
+}
+
+
+.reszletek img {
+    max-width: 100%;
+    height: auto;
+}
 
 .reszletek {
     display: flex;

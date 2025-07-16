@@ -14,13 +14,18 @@ export class Receptelonezet {
     }
     #megjelenites() {
         const receptElem = document.createElement('div');
-        receptElem.className = 'receptKartya';
+        receptElem.className = 'col-sm-6 col-md-4 col-lg-3';
 
         receptElem.innerHTML = `
-            <h3>${this.#nev}</h3>
-            <img src="${this.#kep}" alt="${this.#nev}">
-            <button class="kedvencGomb">${this.#kedvencgomb}</button>
-        `;
+        <div class="card h-100 text-center">
+            <img src="${this.#kep}" alt="${this.#nev}" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h5 class="card-title">${this.#nev}</h5>
+                <button class="btn btn-outline-danger kedvencGomb">${this.#kedvencgomb}</button>
+            </div>
+        </div>
+    `;
+
         this.#szElem.appendChild(receptElem);
 
         const gomb = receptElem.querySelector('.kedvencGomb');
@@ -29,5 +34,4 @@ export class Receptelonezet {
             gomb.textContent = this.#obj.kedvenc ? 'Kedvenc' : 'Nem kedvenc';
         });
     }
-
 }
